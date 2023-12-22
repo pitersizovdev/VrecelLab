@@ -1,0 +1,139 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+
+    background: rgba( 232, 232, 232, 0.1 );
+    backdrop-filter: blur(5px);
+    background-color: rgba(119,118,123, 0.163);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 2px;
+    border: 1px rgba(27, 27, 27, 0.158) solid;
+
+    margin: 0px 100px 0px 100px;
+    padding: 10px 0px 10px 0px;;
+
+        position: sticky; top: 0px;
+        z-index: 10;
+   
+}
+
+
+
+nav .logo{
+    font-weight: 700;
+    font-size: 42px;
+    color: #26D68A;
+    margin: 0px 0px 0px 25px;
+    text-decoration: none;
+}
+
+nav ul{
+    display: flex;
+    margin: 0px 25px 0px 0px;
+
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #EDEDED;
+    font-weight: 500;
+    font-size: 24px;
+    padding: 10px;
+    margin: 2px;
+}
+
+nav .menu{
+    display: none;
+    justify-content: space-between;
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    flex-direction:column;
+    width: 25px;
+    height: 25px;
+
+    padding: 5px;
+    border-radius: 2px;
+
+    background: rgba( 232, 232, 232, 0.1 );
+    backdrop-filter: blur(5px);
+    background-color: rgba(119,118,123, 0.163);
+    box-shadow: inset rgba(0, 0, 0, 0.3) 0px 0px 4px 2px;
+
+}
+
+nav .menu span{
+    height: 4px;
+    width: 100%;
+    background-color: #858585;
+    border-radius: 1px;
+}
+
+nav ul li a:hover{
+    background-color: #26D68A;
+    border-radius: 5px;
+
+}
+nav ul li a:not(.active):hover{
+    background-color: #26d68a7e;
+    border-radius: 5px;
+}
+
+.active{
+    background-color: #26D68A;
+    border-radius: 5px;
+}
+
+
+
+@media (max-width: 900px){
+    nav .menu{
+        display: flex;
+    }
+
+    nav{
+        flex-direction: column;
+        align-items: start;
+        margin: 0px 10px 0px 10px;
+    }
+
+    nav ul{
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: left;
+    }
+
+    nav ul li a{
+        margin: 2px;
+    }
+
+    nav ul li a:hover{
+        background-color: #26d68a00;
+        color: #26D68A;
+    }
+    nav ul li a:not(.active):hover{
+        background-color: #26d68a00;
+        color: #26d68a7e;
+    }
+    
+    .active{
+        background-color: #26d68a00;
+        color: #26D68A;
+    }
+}

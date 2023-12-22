@@ -1,0 +1,16 @@
+body{
+    font-family: 'Carlito', sans-serif;
+    background-color: #252525;
+    color: #EDEDED;
+}
+
+.container{
+    max-width: 1780px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.App{
+    height: 100%;
+    width: 100%;
+}
